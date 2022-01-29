@@ -1,26 +1,40 @@
 body{
+    overflow-x: hidden;
     margin:0px;
     padding:0px;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvnxRp6K6mIb1MeZIjhqPG9GUAljCVvzE124GJayHCgamdda3QV1jdzqXuMOzXqD2qDuw&usqp=CAU);
+}
+
+.li{
+    color:blue;
+    display: inline;
+    text-decoration: none;
+    margin-top: 10px;
+    margin:5px;
+    transition: 0.5s;
+}
+
+#nb{
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    position:relative;
 }
 
 
 #hdr{
     width: 100%;
     height: 20px;
-    color: #3a3aec;
-
-    
-}
-#hdrtext{
-    text-align: center;
     color: white;
-    margin-bottom: 0px;
+    opacity: 0.8;
+    
+
 }
+
 
 #bdy{
     width:100%;
     height: 500px;
-    background-image: url(https://wallpapershome.com/images/wallpapers/polygon-2560x1440-4k-hd-wallpaper-3d-241.jpg);
     margin-top: 0px;
     padding-top: 0px;
 }
@@ -39,7 +53,7 @@ body{
 #bdytext{
     float: right;
     width: 60%;
-    height: 200px;
+    height: 180px;
     color: white;
     text-align: center;
     background-position-y: 170px;
@@ -53,37 +67,32 @@ body{
     height: 70px;
     background-position-x:30px;
     background-position-y: 200px;
-    color: yellow;
+    color:white;
 }
 
 #smlogo{
-    margin-left: 800px;
+    margin-left: 1030px;
     margin-top: 370px;
 
+}
+
+.circle{
+    margin-left: px;
 }
 
 #skills{
     width: 100%;
     height:  470px;
-    background-image: url(https://cdn.ucfbootcamps.com/wp-content/uploads/sites/113/2020/05/full-stack-developer-skills.jpg);
+    background-color: white;
     background-repeat: no-repeat;
-    margin-left: 150px;
-}
 
-#myskil{
-    width: 20%;
-    height: 50px;
-    color:white;
-    text-align: center;
-    background-image: url(https://wallpapershome.com/images/wallpapers/polygon-2560x1440-4k-hd-wallpaper-3d-241.jpg);
 }
 
 #yt{
     width:100%;
     height: 400px;
     background-repeat: no-repeat;
-    background-image: url(https://jungletopp.com/wp-content/uploads/2020/11/youtube.jpg);
-    background-color: black;
+    background-color: white;
 }
 
 #myc{
@@ -103,9 +112,9 @@ body{
     width: 100%;
     height: 30px;
     text-align: center;
-    background-color:black;
+    background-color:white;
     margin-top: 30px;
-    color: white;
+    color:black;
 }
 
 #ytxtx{
@@ -115,7 +124,7 @@ body{
 #mychannellink{
     width: 100%;
     height: 40px;
-    background-color: black;
+    background-color: white;
     text-align: center;
     margin-bottom: 5px;
 }
@@ -135,14 +144,14 @@ body{
 
 #contacttxt{
     text-align: center;
-    color: white;
-    background-image: url(https://wallpapershome.com/images/wallpapers/polygon-2560x1440-4k-hd-wallpaper-3d-241.jpg);
+    color:#0059FF;
+    background-color:white;
+    border: 5px inset white;
 }
 
 #tbl{
     width: 48%;
-    height: 400px;
-    background-image: url(https://wallpapershome.com/images/wallpapers/polygon-2560x1440-4k-hd-wallpaper-3d-241.jpg);
+    height: 450px;
     float: left;
     margin-left: 20px;
     color: white;
@@ -157,10 +166,11 @@ body{
 
 #ftr{
     width: 100%;
-    height: 30px;
-    margin-top: 460px;
-    background-image: url(https://wallpapershome.com/images/wallpapers/polygon-2560x1440-4k-hd-wallpaper-3d-241.jpg);
-    color: white;
+    height: 50px;
+    margin-top: 500px;
+    background-color:white;
+    color:black;
+    border: 5px inset white;
 
 }
 
