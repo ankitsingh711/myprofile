@@ -39,6 +39,7 @@ body{
     padding-top: 0px;
 }
 
+
 #myphoto{
     width:35%;
     height:440px;
@@ -48,7 +49,7 @@ body{
     background-position-y: 10px;
     background-position-x:40px ;
     float:left;
-    border: 2px 2px white;
+    display: flex;
 }
 #bdytext{
     float: right;
@@ -74,10 +75,6 @@ body{
     margin-left: 1030px;
     margin-top: 370px;
 
-}
-
-.circle{
-    margin-left: px;
 }
 
 #skills{
@@ -167,7 +164,7 @@ body{
 
 #ftr{
     width: 100%;
-    height: 80px;
+    height: 90px;
     margin-top: 500px;
     background-color:black;
     color:black;
@@ -188,11 +185,8 @@ padding: 0px;
 
 .footer{
     text-align: center;
-    color: black;
     display: block;
-    font-size: 15px;
-    font-weight: italic;
+    font-size: 17px;
     color:white;
-    margin-top: 8px;
-    opacity: 0.9;
+    margin-top: 5px;
 }
