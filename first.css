@@ -1,217 +1,168 @@
 body{
-    overflow-x: hidden;
     margin:0px;
     padding:0px;
-    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvnxRp6K6mIb1MeZIjhqPG9GUAljCVvzE124GJayHCgamdda3QV1jdzqXuMOzXqD2qDuw&usqp=CAU);
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvnxRp6K6mIb1MeZIjhqPG9GUAljCVvzE124GJayHCgamdda3QV1jdzqXuMOzXqD2qDuw&usqp=CAU);
+    background-color: white;
+    overflow-x: hidden;
 }
 
-
-#nb{
-    width: 100%;
-    height: 30px;
-    text-decoration: none;
-    margin-left: 90%;
+.nav-item:hover{
+    opacity: 0.7;
 }
-
-.button{
-    font-size: 18px;
-    background-color: black;
-    margin-top: 25px;
-    outline: none;
-}
-
-#hdr{
-    width: 100%;
-    height: 20px;
-    color: white;
-    opacity: 0.8;
-    
-
-}
-
-
-#bdy{
-    width:100%;
-    height: 500px;
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
 
 #myphoto{
-    width:35%;
-    height:440px;
-    background-image:url(https://www.linkpicture.com/q/ankitsingh.jpeg-removebg-preview-modified.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-position-y: 10px;
-    background-position-x:40px ;
-    float:left;
-    display: flex;
-    animation: photo 3s ;
+    float: left;
+    width: 15%;
+    height: 300px;
+    margin-top: 25px;
 }
 
 #myphoto:hover{
-    transform: scale(0.9);
+    transform: scale(1.02);
 }
 
-@keyframes photo {
-0% {transform: rotate(180deg)}
-100% {transform: rotate(360deg)}
+#myname{
+    width: 450px;
+    height: 50px;
+    margin-top: 20px;
 }
 
-#bdytext{
-    float: right;
-    width: 60%;
-    height: 180px;
+#myname>span{
+    font-size: 25px;
     color: white;
-    text-align: center;
-    background-position-y: 170px;
-    background-position-x:1000px;
-    margin-top: 200px;
-    margin-right: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
-#bdytext:hover{
-    opacity: 0.8;
+#aboutme{
+    float: right;
+    width: 47%;
+    height: 300px;
+    margin-right: 200px;
+    margin-top: 90px;
 }
 
-#smlogo:hover{
-    transform: scale(1.1);
+#aboutme>span{
+    font-size: 30px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#sml{
-    width: 40%;
-    height: 70px;
-    background-position-x:30px;
-    background-position-y: 200px;
-    color:white;
+#aboutme>p:hover{
+    color: yellow;
 }
 
-#myname:hover{
- opacity: 0.8;
+#aboutme>p{
+    font-size: 17px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#smlogo{
-    margin-left: 1030px;
-    margin-top: 370px;
+#socialmedia{
+    margin-left: 900px;
+    width: 30%;
+    height: 200px;
+}
 
+.smlogos:hover{
+    opacity: 0.7;
 }
 
 #skills{
     width: 100%;
-    height:  470px;
-    background-color: white;
-    background-repeat: no-repeat;
-
-}
-
-#yt{
-    width:100%;
-    height: 400px;
-    background-repeat: no-repeat;
+    height: 500px;
+    margin-top: 300px;
     background-color: white;
 }
 
-#myc{
-    width: 25%;
-    height: 50px;
-    background-color:white;
+#skills>span{
+    font-size: 30px;
+    color:#0d6efd;
+    font-weight: bold;
+    animation: acquiremoving 5s infinite;
+}
+
+@keyframes acquiremoving {
+    from {margin-left: 0px;}
+    to {margin-left: 890px;}
+}
+.skillslogo{
+    display: inline;
+    margin-left: 20px;
+}
+
+.skillsimage:hover{
+    transform: scale(1.07);
+}
+
+#youtubevideo{
+    display: inline;
+    width: 100%;
+    height: 450px;
 }
 
 .video{
-    float: left;
-    height: auto;
-    margin-top:80px;
+    display: inline;
     margin-left: 50px;
+    margin-top: 20px;
 }
 
-#yttext{
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    background-color:white;
-    margin-top: 30px;
-    color:black;
+#click>span{
+    font-size: 25px;
+    color: white;
+    animation: clickmoving 5s infinite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 150px;
 }
 
-#ytxtx{
-    margin-top: 30px;
+
+#subscribeimage{
+    animation: subscribemove 5s infinite;
 }
 
-#mychannellink{
-    width: 100%;
-    height: 40px;
+@keyframes subscribemove {
+    form {margin-left: 0px;}
+    to {margin-left: 900px;}
+}
+
+#contactdetails{
+    height: 520px;
     background-color: white;
-    text-align: center;
-    margin-bottom: 5px;
 }
 
-#mychannellink:hover{
-    transform: scale(1.2);
-}
-
-#contacts{
-    width: 50%;
-    height: 400px;
-    float: left;
-}
-
-#contactbox{
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#contacttxt{
-    text-align: center;
-    color:#0059FF;
-    background-color:white;
-    border: 5px inset white;
-}
-
-#tbl{
-    width: 40%;
+#location{
+    width: 45%;
     height: 450px;
     float: left;
-    margin-left: 100px;
-    color: white;
-    border: 2px double white;
+    margin-left: 40px;
+}
+
+#contactdetails>span{
+    font-size: 30px;
+    color:#0d6efd;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 600px;
+}
+
+#fillform{
+    float: right;
+    width: 45%;
+    height: 450px;
+    margin-right: 40px;
 }
 
 
-#tbltxt{
-    width: 650px;
-    height:400px ;
-    margin: top 2px;
-}
 
-#ftr{
-    width: 100%;
-    height: 90px;
-    margin-top: 500px;
-    background-color:black;
-    color:black;
-    border-top: 2px solid white;
 
-}
 
-#email{
-margin: 0px;
-padding: 0px;
 
-}
 
-#tble{
-    margin-left: 150px;
-    margin-top: 50px;
-}
 
-.footer{
-    text-align: center;
-    display: block;
-    font-size: 17px;
-    color:white;
-    margin-top: 5px;
-}
+
+
+
+
+
+
