@@ -1,13 +1,40 @@
 body{
     margin:0px;
     padding:0px;
-   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvnxRp6K6mIb1MeZIjhqPG9GUAljCVvzE124GJayHCgamdda3QV1jdzqXuMOzXqD2qDuw&usqp=CAU);
-    background-color: white;
     overflow-x: hidden;
 }
 
+#head{
+   background-color: #0079bf;
+    background-repeat: no-repeat;
+    
+}
+
+
 .nav-item:hover{
     opacity: 0.7;
+}
+
+#header>span{
+    font-family: 'Roboto Serif';
+}
+
+#about{
+    margin-right: 150px;
+    margin-top: 60px;
+}
+
+#about>p{
+    font-family: 'PT Sans';
+}
+
+#about>span{
+    font-family: 'Rowdies';
+    
+}
+
+.arrow:hover{
+    opacity: 0.6;
 }
 
 #myphoto{
@@ -68,6 +95,20 @@ body{
     opacity: 0.7;
 }
 
+.card{
+    box-shadow: 5px 5px 5px gray;
+}
+
+.card-body>p{
+    font-family: 'Roboto Serif';
+}
+
+
+
+.card:hover{
+    transform: scale(1.05);
+}
+
 #skills{
     width: 100%;
     height: 500px;
@@ -75,7 +116,7 @@ body{
     background-color: white;
 }
 
-#skills>span{
+#skilltext{
     font-size: 30px;
     color:#0d6efd;
     font-weight: bold;
@@ -113,45 +154,15 @@ body{
     animation: clickmoving 5s infinite;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    margin-left: 150px;
+    margin-left: 400px;
 }
 
 
-#subscribeimage{
-    animation: subscribemove 5s infinite;
-}
 
-@keyframes subscribemove {
-    form {margin-left: 0px;}
-    to {margin-left: 900px;}
-}
 
-#contactdetails{
-    height: 520px;
-    background-color: white;
-}
 
-#location{
-    width: 45%;
-    height: 450px;
-    float: left;
-    margin-left: 40px;
-}
 
-#contactdetails>span{
-    font-size: 30px;
-    color:#0d6efd;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-right: 600px;
-}
 
-#fillform{
-    float: right;
-    width: 45%;
-    height: 450px;
-    margin-right: 40px;
-}
 
 
 
