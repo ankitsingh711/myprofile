@@ -4,8 +4,12 @@ body{
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #head{
-   background-color: #0079bf;
+background-color: #0079bf;
     background-repeat: no-repeat;
     
 }
@@ -99,59 +103,56 @@ body{
 
 
 .flip-card {
-    background-color:white;
+    background-color:whitesmoke;
     width: 200px;
     height: 200px;
-    box-shadow: 5px 5px 5px gray;
-    perspective: 1000px;
-    border: 1px solid black;
-  }
-  
- 
-  .flip-card-inner {
+}
+
+
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  
-  .flip-card:hover .flip-card-inner {
+}
+
+
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
- 
-  .flip-card-front, .flip-card-back {
+}
+
+
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
+}
 
-  .flip-card-front {
-    background-color:white;
+.flip-card-front {
+    background-color:whitesmoke;
     color: black;
-  }
-  
+}
 
-  .flip-card-back {
-    background-color:#0079bf;
-    color: white;
+
+.flip-card-back {
+    background-color:whitesmoke;
+    color: #0079bf;
     transform: rotateY(180deg);
-  }
+    font-style: Roboto Serif;
+}
 
-  .cardz:hover{
-      background-color: #0079bf;
-      color: white;
-  }
+.cardz:hover{
+background-color: #0079bf;
+color: white;
+}
 
-
-
-
-
+#myskill{
+    text-align: center;
+}
 
 #skills{
     width: 100%;
@@ -180,6 +181,10 @@ body{
     transform: scale(1.07);
 }
 
+#progress{
+    text-align: center;
+}
+
 #youtubevideo{
     display: inline;
     width: 100%;
@@ -199,6 +204,22 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     margin-left: 400px;
+}
+
+#project{
+    text-align: center;
+}
+
+#click{
+    text-align: center;
+}
+
+#dob{
+    text-align: center;
+}
+
+#contact{
+    text-align: center;
 }
 
 
@@ -262,17 +283,6 @@ body{
     color: #0079bf;
 }
 
- 
-* {box-sizing:border-box}
-
-@mediaquery screen and (max-width:681px){
-    .flip-card{
-        margin-top:20px;
-    }
-}
-
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
 
 
 .month {
@@ -342,13 +352,94 @@ body {font-family: Verdana, sans-serif;}
 .days li .active {
   padding: 5px;
   background: #0079bf;
-  color: white !important
+  color: white;
 }
 
 
 
+#linkedin{
+    margin-left: 480px;
+}
+
+#linked{
+    background-color: white;
+}
+
+#linkedtext{
+    background-color: #0079bf;
+    text-align: center;
+}
 
 
+
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+  }
+  
+  .row {margin: 0 -5px;}
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .column {
+width: 100%;
+display: inline block;
+margin-bottom: 10px;
+    }
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #444;
+    color: #0079bf;
+    display: inline;
+    width: 20% ;
+}
+
+.fa {
+    font-size:50px;
+}
+
+.to-top{
+    background-color: red;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-decoration: none;
+    color:red;
+    opacity: 0;
+    pointer-events: none;
+    transition: all.4s;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
 
 
 
