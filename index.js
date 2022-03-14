@@ -1,12 +1,35 @@
-const toTop = document.querySelector(".to-top");
-
-window.addEventListener("scroll",{} => {
-  if (window.pageYoffset > 100){
-    toTop.classList.add("active");
-  }else {
-    toTop.classList.remove("active");
+const validateEmail = () => {
+  let email = document.getElementById("email").value;
+  let Eout = document.getElementById("eout");
+  if(email.trim().length == 0) {
+    Eout.innerHTML = "Please Enter Email Address"
+  }else{
+    Eout.value = ""
   }
-})
+}
 
-window.onscroll=toTop()
+const validateFname = () => {
+  let fname = document.getElementById("fname").value;
+  let Eout = document.getElementById("fout");
+  if(fname.trim().length == 0) {
+    fout.innerHTML = "Please Enter First Name"
+  }else{
+    fout.value = ""
+  }
+}
+
+const validateLname = () => {
+  let lname = document.getElementById("lname").value;
+  let lout = document.getElementById("lout");
+  if(lname.trim().length == 0) {
+    lout.innerHTML = "Please Enter Last Name"
+  }else{
+    lout.value = ""
+  }
+}
+
+
+
+
+
 

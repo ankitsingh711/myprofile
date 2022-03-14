@@ -91,12 +91,6 @@
 
   <!-- got to top button  -->
 
- <a href="#" class="to-top ">
-  <i class="fa-solid fa-angles-up"></i>
- </a>
-
-     
-   
 
 
         <!-- skills starts  -->
@@ -251,17 +245,6 @@
         </div>
 
 
-    <div id="linked" class="containe-fluid">
-          <!-- linked in card  -->
-      <div id="linkedtext" class="container-fluid">
-       <h2 style="color: white;font-size: 30px;font-family: Roboto Serif;">Linked In</h2>
-      </div>
-      <div id="linkedin" class="badge-base LI-profile-badge my-5" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="ankit-singh-422980227" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/ankit-singh-422980227?  trk=profile-badge"></a>
-      </div>
-
-    </div>
-
-
       <!-- progrss section starts  -->
 
       <div id="progress" class="container-fluid my-5" style="background-color: #0079bf;">
@@ -397,17 +380,23 @@
             <div class="col">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.906841796142!2d84.36338741445871!3d25.773640414397757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39928f0953845c9b%3A0xcf6240a240b27f81!2sBelahari%20Branch%20Post%20Office%2C%20Majhua%2C%20Ballia%20-%20277403!5e0!3m2!1sen!2sin!4v1644812612089!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
+
+            <!-- form Submit -->
+
             <div class="col mx-5" style="background-color: #0079bf;box-shadow: 5px 5px 5px gray;">
               <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label is-invalid"><span style="color: white;font-size: 20px;"> Email address </span></label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com">
+                <label  for="exampleFormControlInput1" class="form-label is-invalid"><span style="color: white;font-size: 20px;"> Email address </span></label>
+                <input id="email" onblur="validateEmail()" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com">
+                <p id="eout"></p>
               </div>
               <div class="row">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                  <input id="fname" onblur="validateFname()" type="text" class="form-control" placeholder="First name" aria-label="First name">
+                  <p id="fout"></p>
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                  <input id="lname" onblur="validateLname()" type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                  <p id="lout"></p>
                 </div>
               </div><br>
               <select class="form-select" aria-label="Default select example">
